@@ -25,7 +25,7 @@ class _ScrollState extends State<Scroll> {
           .map((e) => e.index)
           .toList();
       if (indices.isNotEmpty) {
-        print(indices);
+        //  print(indices);
       }
     });
     super.initState();
@@ -43,10 +43,10 @@ class _ScrollState extends State<Scroll> {
                 });
                 itemScrollController.scrollTo(
                     index: ind,
-                    duration: Duration(seconds: 2),
+                    duration: const Duration(seconds: 2),
                     curve: Curves.easeInOutCubic);
               },
-              icon: Icon(Icons.next_plan)),
+              icon: const Icon(Icons.next_plan)),
           IconButton(
               onPressed: () {
                 setState(() {
@@ -54,10 +54,10 @@ class _ScrollState extends State<Scroll> {
                 });
                 itemScrollController.scrollTo(
                     index: ind,
-                    duration: Duration(seconds: 2),
+                    duration: const Duration(seconds: 2),
                     curve: Curves.easeInOutCubic);
               },
-              icon: Icon(Icons.next_plan)),
+              icon: const Icon(Icons.next_plan)),
           Expanded(
             child: ScrollablePositionedList.builder(
                 itemCount: 5,
@@ -70,7 +70,7 @@ class _ScrollState extends State<Scroll> {
                       alignment: Alignment.center,
                       height: MediaQuery.of(context).size.height,
                       width: 150,
-                      margin: EdgeInsets.all(10),
+                      margin: const EdgeInsets.all(10),
                       child: Text((index + 1).toString()),
                     ),
                   );

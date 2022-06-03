@@ -37,7 +37,7 @@ Widget card() {
   return Wrap(children: [
     Card(
       color: Colors.white30,
-      child: Container(
+      child: SizedBox(
         width: 150,
         child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
@@ -50,7 +50,7 @@ Widget card() {
     ),
     Card(
       color: Colors.white30,
-      child: Container(
+      child: SizedBox(
         width: 150,
         child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,

@@ -19,10 +19,17 @@ class ContactMobile extends StatelessWidget {
         const SizedBox(
           height: 50,
         ),
-        contactItem(Icons.message, "rahulraj7626@gmail.com"),
-        contactItem(Icons.call, "+91 9809307626"),
-        contactItem(Icons.location_pin, "Malappuram, Kerala"),
-        contactItem(Icons.stacked_bar_chart, "+91 9809307626"),
+        contactItem(Icons.message, "rahulraj7626@gmail.com", true),
+        contactItem(Icons.call, "+91 9809307626", true),
+        contactItem(Icons.location_pin, "Malappuram, Kerala", true),
+        contactItem(
+            "assets/icons/git.png", "https://github.com/rahulraj7626", false),
+        contactItem("assets/icons/link.png",
+            "https://www.linkedin.com/in/rahulraj7626", false),
+        contactItem("assets/icons/stack.png",
+            "https://stackoverflow.com/users/15011702", false),
+        contactItem(
+            "assets/icons/wats.png", "https://wa.me/+919809307626", false),
         const SizedBox(
           height: 50,
         ),
@@ -31,14 +38,21 @@ class ContactMobile extends StatelessWidget {
   }
 }
 
-Widget contactItem(icon, txt2) {
+Widget contactItem(icon, txt2, isIcon) {
   return Row(
     children: [
-      Icon(
-        icon,
-        color: Colors.yellow,
-      ),
-      TextTypes.normalText(txt2),
+      isIcon == true
+          ? Icon(
+              icon,
+              color: Colors.yellow,
+            )
+          : Image.asset(
+              icon,
+              height: 20,
+            ),
+      Padding(
+          padding: const EdgeInsets.only(left: 5),
+          child: TextTypes.normalText(txt2)),
     ],
   );
 }
