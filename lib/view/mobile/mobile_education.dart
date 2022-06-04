@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 
+import '../../model/portfolio_model.dart';
 import '../../utils/text_styles.dart';
 
 class EducationMobile extends StatelessWidget {
   final double height;
-  const EducationMobile({Key? key, required this.height}) : super(key: key);
+  final PortFolioModel data;
+  const EducationMobile({Key? key, required this.height, required this.data})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {

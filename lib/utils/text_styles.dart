@@ -41,6 +41,18 @@ class TextTypes {
     );
   }
 
+  static Padding gridText(txt) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 8),
+      child: Text(
+        txt,
+        textAlign: TextAlign.start,
+        style: const TextStyle(
+            fontSize: 18, fontWeight: FontWeight.w500, color: Colors.white),
+      ),
+    );
+  }
+
   static Padding headText(txt) {
     return Padding(
       padding: const EdgeInsets.all(8.0),

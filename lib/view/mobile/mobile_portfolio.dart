@@ -1,15 +1,18 @@
 import 'package:flutter/material.dart';
 
+import '../../model/portfolio_model.dart';
 import '../../utils/text_styles.dart';
+import '../common_widget/popup.dart';
 
 class PortfolioMobile extends StatelessWidget {
   final double height;
-  const PortfolioMobile({Key? key, required this.height}) : super(key: key);
+  final PortFolioModel data;
+  const PortfolioMobile({Key? key, required this.height, required this.data})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: height,
       margin: const EdgeInsets.all(10),
       child: Column(children: [
         TextTypes.headText("My portfolio"),
@@ -19,7 +22,11 @@ class PortfolioMobile extends StatelessWidget {
         const SizedBox(
           height: 50,
         ),
-        wrp(),
+        GestureDetector(
+            onTap: () {
+              PopupWidget().scaleDialog(context);
+            },
+            child: wrp()),
         const SizedBox(
           height: 50,
         ),
@@ -29,7 +36,7 @@ class PortfolioMobile extends StatelessWidget {
 }
 
 Widget wrp() {
-  return Wrap(spacing: 14, children: [
+  return Wrap(spacing: 20, runSpacing: 20, children: [
     card(
       "assets/icons/git.png",
       "https://github.com/rahulraj7626",
@@ -46,6 +53,14 @@ Widget wrp() {
       "assets/icons/wats.png",
       "https://wa.me/+919809307626",
     ),
+    card(
+      "assets/icons/git.png",
+      "https://github.com/rahulraj7626",
+    ),
+    card(
+      "assets/icons/link.png",
+      "https://www.linkedin.com/in/rahulraj7626",
+    ),
   ]);
 }
 
@@ -56,10 +71,18 @@ Widget card(icon, link) {
       borderRadius: BorderRadius.circular(15.0),
     ),
     child: Container(
-      padding: const EdgeInsets.all(12.0),
-      child: Image.asset(
-        icon,
-        height: 30,
+      padding: const EdgeInsets.all(15.0),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Image.asset(
+            icon,
+            height: 70,
+            fit: BoxFit.contain,
+          ),
+          TextTypes.gridText("Radio Talky")
+        ],
       ),
     ),
   );

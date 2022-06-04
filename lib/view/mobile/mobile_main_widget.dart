@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
 
+import '../../constants/color_constants.dart';
+import '../../model/portfolio_model.dart';
 import '../../utils/text_styles.dart';
 
 class MobileMainWidget extends StatelessWidget {
   final double height;
-  const MobileMainWidget({Key? key, required this.height}) : super(key: key);
+  final PortFolioModel data;
+  const MobileMainWidget({Key? key, required this.height, required this.data})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -15,12 +19,12 @@ class MobileMainWidget extends StatelessWidget {
         const SizedBox(
           height: 50,
         ),
-        const CircleAvatar(
+        CircleAvatar(
           backgroundColor: Colors.white30,
           radius: 70,
           child: Icon(
             Icons.person,
-            color: Colors.blue,
+            color: CColors.yellow,
             size: 100,
           ),
         ),
@@ -28,9 +32,8 @@ class MobileMainWidget extends StatelessWidget {
           height: 50,
         ),
         TextTypes.subTitleText("HI THERE !"),
-        TextTypes.headText("IAM RAHUL RAJ EK"),
-        TextTypes.descriptionText(
-            "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available."),
+        TextTypes.headText("I 'am  ${data.name}"),
+        TextTypes.descriptionText(data.about),
         const SizedBox(
           height: 50,
         ),
@@ -66,7 +69,7 @@ Widget wrp() {
 
 Widget card(icon, link) {
   return Card(
-    color: Colors.white30,
+    color: CColors.grey,
     shape: RoundedRectangleBorder(
       borderRadius: BorderRadius.circular(15.0),
     ),

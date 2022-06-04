@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 
+import '../../model/portfolio_model.dart';
 import '../../utils/text_styles.dart';
 import '../common_widget/elements.dart';
 
 class MobileAbout extends StatelessWidget {
   final double height;
-
-  const MobileAbout({Key? key, required this.height}) : super(key: key);
+  final PortFolioModel data;
+  const MobileAbout({Key? key, required this.height, required this.data})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {

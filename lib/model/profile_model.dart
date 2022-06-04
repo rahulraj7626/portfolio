@@ -1,0 +1,64 @@
+Map<String, dynamic> port = {
+  "name": "Rahul Raj EK",
+  "about":
+      "Self taught Flutter developer with 2+ years of experience with a wide range of cross plateform development and technology skills. Able to leverage  expertise to build interactive and user-centered Android, iOS, Web apps to scale.",
+  "dob": "18 july 1995",
+  "designation": "Flutter developer\n Freelancer",
+  "experiance": "2+",
+  "projects": "10+",
+  "languages": "Malayalam,\nEnglish",
+  "highestQualification": "Master's of \nComputer Applications",
+  "qualification": [
+    {
+      "course": "Master's of \nComputer Applications",
+      "college": "College of engineering trivandrum (CET)",
+      "date": "2017 - 2020",
+      "place": "Trivandrum"
+    },
+    {
+      "course": "Bachlors's of \nComputer Applications",
+      "college": "CHMKM Gvt arts and science college",
+      "date": "2016 - 2019",
+      "place": "Tanur"
+    },
+    {
+      "course": "Plus Two",
+      "college": "MESHSS Irimbiliyam",
+      "date": "2011 - 2013",
+      "place": "Valanchery"
+    },
+    {
+      "course": "SSLC",
+      "college": "MESHSS Irimbiliyam",
+      "date": "2011 - 2013",
+      "place": "Valanchery"
+    },
+  ],
+  "address": {
+    "address1": "Eranchipalathingal Kalarikkal house",
+    "address2": "Edayur Post, Valancheri",
+    "address3": "Pin : 676552",
+    "address4": "Malappuram, Kerala",
+    "address5": "India",
+  },
+  "links": {
+    "mob": "+91 9809307626",
+    "watsapp": "https://wa.me/+919809307626",
+    "linked": "https://www.linkedin.com/in/rahulraj7626",
+    "github": "https://github.com/rahulraj7626",
+    "stack": "https://stackoverflow.com/users/15011702",
+    "email": "rahulraj7626@gmail.com",
+    "insta": "https://www.instagram.com/ra_h_o_o_l/",
+    "fb": "https://www.facebook.com/rahulraj7626"
+  },
+  "iconsList": {
+    "mob": "Rahool",
+    "watsapp": "bolk3@steamohwsh.com",
+    "linked": "9809307626",
+    "github": "123456",
+    "stack": "Rahool",
+    "email": "bolk3@steamohwsh.com",
+    "insta": "9809307626",
+    "fb": "123456"
+  }
+};
