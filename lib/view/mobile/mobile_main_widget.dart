@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/implemetation.dart/uri_launcher.dart';
-import '../../constants/color_constants.dart';
 import '../../model/portfolio_model.dart';
 import '../../utils/text_styles.dart';
 import '../common_widget/icon_card_widget.dart';

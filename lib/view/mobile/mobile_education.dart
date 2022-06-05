@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/constants/color_constants.dart';
 
 import '../../model/portfolio_model.dart';
 import '../../utils/text_styles.dart';
+import '../common_widget/education_widget.dart';
 
 class EducationMobile extends StatelessWidget {
   final double height;
@@ -14,84 +16,46 @@ class EducationMobile extends StatelessWidget {
     return Container(
       margin: const EdgeInsets.all(10),
       child: Column(children: [
-        TextTypes.largeP("My Education"),
+        TextTypes.xLargP("My Education"),
         const Divider(
           color: Colors.yellow,
         ),
         const SizedBox(
           height: 50,
         ),
-        wrp()
+        wrapWidget()
       ]),
     );
   }
-}
 
-Widget wrp() {
-  return Wrap(
-    children: [
-      edu(),
-      edu(),
-      edu(),
-      edu(),
-    ],
-  );
-}
-
-Widget edu() {
-  return Container(
-    margin: const EdgeInsets.symmetric(vertical: 10),
-    child: Row(
+  Widget wrapWidget() {
+    return Wrap(
       children: [
-        Expanded(
-          flex: 2,
-          child: Column(
-            children: [
-              Container(
-                height: 40,
-                width: 40,
-                decoration: const BoxDecoration(
-                    color: Color.fromARGB(255, 219, 197, 2),
-                    shape: BoxShape.circle),
-                child: const Icon(
-                  Icons.school,
-                  color: Colors.white,
-                  size: 30,
-                ),
-              ),
-              Container(
-                height: 150,
-                width: 4.0,
-                color: Colors.white,
-              ),
-            ],
-          ),
+        EducationWidget(
+          course: data.qualification[0].course,
+          place: data.qualification[0].place,
+          college: data.qualification[0].college,
+          year: data.qualification[0].date,
         ),
-        Expanded(
-          flex: 8,
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              yer(),
-              TextTypes.largeP("My Education"),
-              TextTypes.mediamP(
-                  "My EducationMy EducationMy Education My EducationMy EducationMy Education"),
-            ],
-          ),
+        EducationWidget(
+          course: data.qualification[1].course,
+          place: data.qualification[1].place,
+          college: data.qualification[1].college,
+          year: data.qualification[1].date,
         ),
+        EducationWidget(
+          course: data.qualification[2].course,
+          place: data.qualification[2].place,
+          college: data.qualification[2].college,
+          year: data.qualification[2].date,
+        ),
+        EducationWidget(
+          course: data.qualification[3].course,
+          place: data.qualification[3].place,
+          college: data.qualification[3].college,
+          year: data.qualification[3].date,
+        )
       ],
-    ),
-  );
-}
-
-Widget yer() {
-  return Container(
-    alignment: Alignment.center,
-    width: 100,
-    margin: const EdgeInsets.all(8),
-    padding: const EdgeInsets.all(2),
-    decoration: BoxDecoration(
-        color: Colors.white38, borderRadius: BorderRadius.circular(30)),
-    child: TextTypes.mediamP("2015"),
-  );
+    );
+  }
 }

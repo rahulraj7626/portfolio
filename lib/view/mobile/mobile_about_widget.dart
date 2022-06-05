@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/constants/color_constants.dart';
 
 import '../../model/portfolio_model.dart';
 import '../../utils/text_styles.dart';
 import '../common_widget/elements.dart';
+import '../common_widget/plus_card_widget.dart';
 
 class MobileAbout extends StatelessWidget {
   final double height;
@@ -16,52 +18,33 @@ class MobileAbout extends StatelessWidget {
       height: height,
       margin: const EdgeInsets.all(10),
       child: Column(children: [
-        TextTypes.largeP("ABOUT ME"),
-        const Divider(
-          color: Colors.yellow,
-        ),
-        about("Nmae", "Rahul Raj EK"),
-        about("Date of birth", "18-07-1995"),
-        about("Qualification", "Master's of \nComputer Applications"),
-        about("Post", "Flutter Developer"),
-        about("Languages known", "Malayalam,\nEnglish"),
-        const SizedBox(
-          height: 50,
-        ),
+        TextTypes.xLargP("About me"),
+        Divider(color: CColors.yellow),
+        const Spacer(),
+        about("Name", data.name),
+        about("Date of birth", data.dob),
+        about("Qualification", data.highestQualification),
+        about("Designation", data.designation),
+        about("Languages known", data.languages),
+        const Spacer(),
         downloadContainer(),
-        card(),
+        const Spacer(),
+        wrapWidget(),
+        const Spacer(),
       ]),
     );
   }
-}
 
-Widget card() {
-  return Wrap(children: [
-    Card(
-      color: Colors.white30,
-      child: SizedBox(
-        width: 150,
-        child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              TextTypes.mediamP("2+"),
-              TextTypes.mediamP("Years of Experience"),
-            ]),
+  Widget wrapWidget() {
+    return Wrap(runSpacing: 12, spacing: 12, children: [
+      PlusCardWidget(
+        content: "Experiance",
+        year: data.experiance,
       ),
-    ),
-    Card(
-      color: Colors.white30,
-      child: SizedBox(
-        width: 150,
-        child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              TextTypes.mediamP("10+"),
-              TextTypes.mediamP("Projects"),
-            ]),
+      PlusCardWidget(
+        content: "Projects",
+        year: data.projects,
       ),
-    ),
-  ]);
+    ]);
+  }
 }

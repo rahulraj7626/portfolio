@@ -24,14 +24,10 @@ class DrawerList extends StatelessWidget {
         height: height,
         child: Column(
           children: [
+            const Spacer(),
             const CircleAvatar(
-              backgroundColor: Colors.white30,
-              radius: 70,
-              child: Icon(
-                Icons.person,
-                color: Colors.blue,
-                size: 100,
-              ),
+              radius: 60, // Image radius
+              backgroundImage: AssetImage("assets/images/dp.jpeg"),
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),

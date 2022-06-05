@@ -107,6 +107,7 @@ class IconsList {
   IconsList({
     required this.mob,
     required this.watsapp,
+    required this.location,
     required this.linked,
     required this.github,
     required this.stack,
@@ -117,6 +118,7 @@ class IconsList {
 
   String mob;
   String watsapp;
+  String location;
   String linked;
   String github;
   String stack;
@@ -127,6 +129,7 @@ class IconsList {
   factory IconsList.fromJson(Map<String, dynamic> json) => IconsList(
         mob: json["mob"],
         watsapp: json["watsapp"],
+        location: json["location"],
         linked: json["linked"],
         github: json["github"],
         stack: json["stack"],
@@ -138,6 +141,7 @@ class IconsList {
   Map<String, dynamic> toJson() => {
         "mob": mob,
         "watsapp": watsapp,
+        "location": location,
         "linked": linked,
         "github": github,
         "stack": stack,

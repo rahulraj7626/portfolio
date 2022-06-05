@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/constants/color_constants.dart';
 
 import '../../utils/text_styles.dart';
 
@@ -16,17 +17,16 @@ Widget downloadContainer() {
   return Container(
     alignment: Alignment.center,
     width: 200,
-    margin: const EdgeInsets.all(8),
-    padding: const EdgeInsets.all(8),
+    padding: const EdgeInsets.all(4),
     decoration: BoxDecoration(
-        color: Colors.white38, borderRadius: BorderRadius.circular(30)),
+        color: CColors.grey, borderRadius: BorderRadius.circular(30)),
     child: Row(mainAxisAlignment: MainAxisAlignment.center, children: [
       TextTypes.mediamP("Download CV"),
-      const Padding(
-        padding: EdgeInsets.all(8.0),
+      Padding(
+        padding: const EdgeInsets.all(8.0),
         child: Icon(
           Icons.download,
-          color: Colors.white,
+          color: CColors.white,
           size: 28,
         ),
       )
