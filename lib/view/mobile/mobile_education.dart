@@ -14,7 +14,7 @@ class EducationMobile extends StatelessWidget {
     return Container(
       margin: const EdgeInsets.all(10),
       child: Column(children: [
-        TextTypes.headText("My Education"),
+        TextTypes.largeP("My Education"),
         const Divider(
           color: Colors.yellow,
         ),
@@ -73,8 +73,8 @@ Widget edu() {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               yer(),
-              TextTypes.headText("My Education"),
-              TextTypes.normal2Text(
+              TextTypes.largeP("My Education"),
+              TextTypes.mediamP(
                   "My EducationMy EducationMy Education My EducationMy EducationMy Education"),
             ],
           ),
@@ -92,6 +92,6 @@ Widget yer() {
     padding: const EdgeInsets.all(2),
     decoration: BoxDecoration(
         color: Colors.white38, borderRadius: BorderRadius.circular(30)),
-    child: TextTypes.normalText("2015"),
+    child: TextTypes.mediamP("2015"),
   );
 }

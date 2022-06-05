@@ -15,7 +15,7 @@ class ContactMobile extends StatelessWidget {
       height: height,
       margin: const EdgeInsets.all(10),
       child: Column(children: [
-        TextTypes.headText("Contact me"),
+        TextTypes.largeP("Contact me"),
         const Divider(
           color: Colors.yellow,
         ),
@@ -31,7 +31,7 @@ class ContactMobile extends StatelessWidget {
         const Spacer(),
         wrp(),
         const Spacer(),
-        TextTypes.normal2Text("2022 \u00a9 Rahul Raj"),
+        TextTypes.mediamP("2022 \u00a9 Rahul Raj"),
       ]),
     );
   }
@@ -61,7 +61,7 @@ Widget contactItem(icon, txt2, isIcon) {
                   ),
             Padding(
                 padding: const EdgeInsets.only(left: 5),
-                child: TextTypes.normal2Text(txt2)),
+                child: TextTypes.mediamP(txt2)),
           ],
         ),
       ),

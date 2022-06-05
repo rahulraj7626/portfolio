@@ -5,9 +5,9 @@ import '../../utils/text_styles.dart';
 Widget about(txt1, txt2) {
   return Row(
     children: [
-      Expanded(flex: 3, child: TextTypes.normalText(txt1)),
-      Expanded(flex: 1, child: TextTypes.normalText(":")),
-      Expanded(flex: 6, child: TextTypes.normalText(txt2)),
+      Expanded(flex: 3, child: TextTypes.mediamP(txt1)),
+      Expanded(flex: 1, child: TextTypes.mediamP(":")),
+      Expanded(flex: 6, child: TextTypes.mediamP(txt2)),
     ],
   );
 }
@@ -21,7 +21,7 @@ Widget downloadContainer() {
     decoration: BoxDecoration(
         color: Colors.white38, borderRadius: BorderRadius.circular(30)),
     child: Row(mainAxisAlignment: MainAxisAlignment.center, children: [
-      TextTypes.normalText("Download CV"),
+      TextTypes.mediamP("Download CV"),
       const Padding(
         padding: EdgeInsets.all(8.0),
         child: Icon(

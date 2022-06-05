@@ -43,7 +43,7 @@ Map<String, dynamic> port = {
   },
   "links": {
     "mob": "+91 9809307626",
-    "watsapp": "https://wa.me/+919809307626",
+    "watsapp": "+919809307626",
     "linked": "https://www.linkedin.com/in/rahulraj7626",
     "github": "https://github.com/rahulraj7626",
     "stack": "https://stackoverflow.com/users/15011702",
@@ -52,13 +52,13 @@ Map<String, dynamic> port = {
     "fb": "https://www.facebook.com/rahulraj7626"
   },
   "iconsList": {
-    "mob": "Rahool",
-    "watsapp": "bolk3@steamohwsh.com",
-    "linked": "9809307626",
-    "github": "123456",
-    "stack": "Rahool",
-    "email": "bolk3@steamohwsh.com",
-    "insta": "9809307626",
-    "fb": "123456"
+    "mob": "assets/icons/call.png",
+    "watsapp": "assets/icons/wats.png",
+    "linked": "assets/icons/link.png",
+    "github": "assets/icons/git.png",
+    "stack": "assets/icons/stack.png",
+    "email": "assets/icons/email.png",
+    "insta": "assets/icons/insta.png",
+    "fb": "assets/icons/fb.png"
   }
 };

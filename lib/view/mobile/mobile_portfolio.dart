@@ -15,7 +15,7 @@ class PortfolioMobile extends StatelessWidget {
     return Container(
       margin: const EdgeInsets.all(10),
       child: Column(children: [
-        TextTypes.headText("My portfolio"),
+        TextTypes.largeP("My portfolio"),
         const Divider(
           color: Colors.yellow,
         ),
@@ -81,7 +81,7 @@ Widget card(icon, link) {
             height: 70,
             fit: BoxFit.contain,
           ),
-          TextTypes.gridText("Radio Talky")
+          TextTypes.mediamP("Radio Talky")
         ],
       ),
     ),

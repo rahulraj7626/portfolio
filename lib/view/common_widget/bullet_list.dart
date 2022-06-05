@@ -18,12 +18,12 @@ class BulletList extends StatelessWidget {
           return Row(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              TextTypes.normal2Text('\u2022'),
+              TextTypes.mediamP('\u2022'),
               const SizedBox(
                 width: 5,
               ),
               Expanded(
-                child: TextTypes.normal2Text(str),
+                child: TextTypes.mediamP(str),
               ),
             ],
           );

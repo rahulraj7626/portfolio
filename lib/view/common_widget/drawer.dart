@@ -35,9 +35,9 @@ class DrawerList extends StatelessWidget {
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: TextTypes.subTitleText("Rahul Raj"),
+              child: TextTypes.largeP("Rahul Raj"),
             ),
-            TextTypes.descriptionText("Flutter Developer"),
+            TextTypes.mediamP("Flutter Developer"),
             const Spacer(),
             Container(
                 alignment: Alignment.center,
@@ -45,22 +45,19 @@ class DrawerList extends StatelessWidget {
                   children: [
                     GestureDetector(
                         onTap: () async {},
-                        child: _container(TextTypes.descriptionText("Home"))),
+                        child: _container(TextTypes.mediamP("Home"))),
                     GestureDetector(
                         onTap: () async {},
-                        child: _container(TextTypes.descriptionText("About"))),
+                        child: _container(TextTypes.mediamP("About"))),
                     GestureDetector(
                         onTap: () async {},
-                        child:
-                            _container(TextTypes.descriptionText("Education"))),
+                        child: _container(TextTypes.mediamP("Education"))),
                     GestureDetector(
                         onTap: () async {},
-                        child:
-                            _container(TextTypes.descriptionText("Portfolio"))),
+                        child: _container(TextTypes.mediamP("Portfolio"))),
                     GestureDetector(
                         onTap: () async {},
-                        child:
-                            _container(TextTypes.descriptionText("Contact"))),
+                        child: _container(TextTypes.mediamP("Contact"))),
                   ],
                 )),
             const Spacer(),

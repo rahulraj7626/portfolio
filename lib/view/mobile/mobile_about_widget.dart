@@ -16,7 +16,7 @@ class MobileAbout extends StatelessWidget {
       height: height,
       margin: const EdgeInsets.all(10),
       child: Column(children: [
-        TextTypes.headText("ABOUT ME"),
+        TextTypes.largeP("ABOUT ME"),
         const Divider(
           color: Colors.yellow,
         ),
@@ -45,8 +45,8 @@ Widget card() {
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              TextTypes.headText("2+"),
-              TextTypes.subTitleText("Years of Experience"),
+              TextTypes.mediamP("2+"),
+              TextTypes.mediamP("Years of Experience"),
             ]),
       ),
     ),
@@ -58,8 +58,8 @@ Widget card() {
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              TextTypes.headText("10+"),
-              TextTypes.subTitleText("Projects"),
+              TextTypes.mediamP("10+"),
+              TextTypes.mediamP("Projects"),
             ]),
       ),
     ),

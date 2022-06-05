@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/view/common_widget/popup.dart';
 import 'package:portfolio/view/home.dart';
 
 void main() {

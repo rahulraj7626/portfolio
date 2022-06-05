@@ -1,77 +1,61 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/utils/text_style.dart';
 
 class TextTypes {
-  static Padding descriptionText(txt) {
+  static Padding xLargP(txt) {
     return Padding(
       padding: const EdgeInsets.all(8.0),
-      child: Text(
-        txt,
-        textAlign: TextAlign.justify,
-        style: const TextStyle(
-            height: 1.3,
-            letterSpacing: 1.2,
-            fontSize: 18,
-            fontWeight: FontWeight.w400,
-            color: Colors.white),
-      ),
+      child: Text(txt,
+          style: AppTextStyle.fontRoboto(
+            fontSize: 26,
+            fontWeight: FontWeight.w600,
+          )),
     );
   }
 
-  static Padding normalText(txt) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 4),
-      child: Text(
-        txt,
-        textAlign: TextAlign.justify,
-        style: const TextStyle(
-            fontSize: 18, fontWeight: FontWeight.w400, color: Colors.white),
-      ),
-    );
-  }
-
-  static Padding normal2Text(txt) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 4),
-      child: Text(
-        txt,
-        textAlign: TextAlign.start,
-        style: const TextStyle(
-            fontSize: 18, fontWeight: FontWeight.w400, color: Colors.white),
-      ),
-    );
-  }
-
-  static Padding gridText(txt) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 8),
-      child: Text(
-        txt,
-        textAlign: TextAlign.start,
-        style: const TextStyle(
-            fontSize: 18, fontWeight: FontWeight.w500, color: Colors.white),
-      ),
-    );
-  }
-
-  static Padding headText(txt) {
+  static Padding mediamP(txt) {
     return Padding(
       padding: const EdgeInsets.all(8.0),
-      child: Text(
-        txt,
-        style: const TextStyle(
-            fontSize: 26, fontWeight: FontWeight.w600, color: Colors.white),
-      ),
+      child: Text(txt,
+          style: AppTextStyle.fontRoboto(
+            fontSize: 16,
+            fontWeight: FontWeight.w500,
+          )),
     );
   }
 
-  static Padding subTitleText(txt) {
+  static Padding smallP(txt) {
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: Text(txt,
+          style: AppTextStyle.fontRoboto(
+            fontSize: 14,
+            fontWeight: FontWeight.w600,
+          )),
+    );
+  }
+
+  static Padding xSmallP(txt) {
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: Text(txt,
+          style: AppTextStyle.fontRoboto(
+            fontSize: 12,
+            fontWeight: FontWeight.w600,
+          )),
+    );
+  }
+
+  static Padding largeP(txt) {
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: Text(
         txt,
         textAlign: TextAlign.center,
-        style: const TextStyle(
-            fontSize: 22, fontWeight: FontWeight.w600, color: Colors.white),
+        style: AppTextStyle.fontRoboto(
+          fontSize: 22,
+          fontWeight: FontWeight.w600,
+        ),
       ),
     );
   }
