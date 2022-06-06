@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/constants/color_constants.dart';
 import 'package:portfolio/model/portfolio_model.dart';
 import 'package:portfolio/view/mobile/mobile_about_widget.dart';
 import 'package:portfolio/view/mobile/mobile_contact.dart';

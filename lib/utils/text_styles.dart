@@ -26,6 +26,17 @@ class TextTypes {
     );
   }
 
+  static Padding normalHead(txt) {
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: Text(txt,
+          style: AppTextStyle.fontRoboto(
+            fontSize: 16,
+            fontWeight: FontWeight.w600,
+          )),
+    );
+  }
+
   static Padding mediamP(txt) {
     return Padding(
       padding: const EdgeInsets.all(4.0),
@@ -68,6 +79,20 @@ class TextTypes {
         style: AppTextStyle.fontRoboto(
           fontSize: 22,
           fontWeight: FontWeight.w600,
+        ),
+      ),
+    );
+  }
+
+  static Padding largeHead(txt) {
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: Text(
+        txt,
+        textAlign: TextAlign.center,
+        style: AppTextStyle.fontRoboto(
+          fontSize: 22,
+          fontWeight: FontWeight.w700,
         ),
       ),
     );

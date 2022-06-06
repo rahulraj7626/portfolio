@@ -4,7 +4,7 @@ Map<String, dynamic> port = {
       "Self taught Flutter developer with 2+ years of experience with a wide range of cross plateform development and technology skills. Able to leverage  expertise to build interactive and user-centered Android, iOS, Web apps to scale.",
   "dob": "18 july 1995",
   "designation": "Flutter developer\nFreelancer",
-  "experiance": "2+",
+  "experiance": "1+",
   "projects": "10+",
   "languages": "Malayalam,\nEnglish",
   "highestQualification": "Master's of \nComputer Applications",
@@ -68,9 +68,20 @@ Map<String, dynamic> port = {
 Map<String, dynamic> works = {
   "works": [
     {
+      "title": "My Portfolio",
+      "haveLink": false,
+      "linkText": "Coming soon",
+      "details":
+          "Responsive portfolio with Flutter Web, to impress recruiters and employers, without HTML/CSS.",
+      "linkIcon": "assets/icons/web.png",
+      "link": "https://github.com/rahulraj7626",
+      "description": ["Flutter Web , Android ,iOS"],
+      "img": "assets/images/flutter.png"
+    },
+    {
       "title": "Queen",
       "haveLink": true,
-      "linkText": "Git repo here",
+      "linkText": "Playstore link here",
       "details": "Virtual queue management app",
       "linkIcon": "assets/icons/play.png",
       "link":
@@ -79,125 +90,47 @@ Map<String, dynamic> works = {
       "img": "assets/images/queen.png"
     },
     {
-      "title": "Flutter developer",
+      "title": "NMT Scanner",
       "haveLink": true,
-      "linkText": "Git repo here",
-      "details": "jhkjhkh",
-      "linkIcon": "assets/icons/fb.png",
-      "link":
-          "https://play.google.com/store/apps/details?id=com.queein.partner",
-      "description": ["helloo", "world"],
-      "img": "assets/images/queen.png"
-    },
-    {
-      "title": "Flutter developer",
-      "haveLink": true,
-      "linkText": "Git repo here",
-      "details": "jhkjhkh",
-      "linkIcon": "assets/icons/fb.png",
-      "link":
-          "https://play.google.com/store/apps/details?id=com.queein.partner",
-      "description": ["helloo", "world"],
-      "img": "assets/images/flutter.png"
-    },
-    {
-      "title": "Queen",
-      "haveLink": true,
-      "linkText": "Git repo here",
-      "details": "jhkjhkh",
-      "linkIcon": "assets/icons/fb.png",
-      "link":
-          "https://play.google.com/store/apps/details?id=com.queein.partner",
-      "description": ["helloo", "world"],
-      "img": "assets/images/queen.png"
-    },
-    {
-      "title": "Flutter developer",
-      "haveLink": true,
-      "linkText": "Git repo here",
-      "details": "jhkjhkh",
-      "linkIcon": "assets/icons/fb.png",
-      "link":
-          "https://play.google.com/store/apps/details?id=com.queein.partner",
-      "description": ["helloo", "world"],
-      "img": "assets/images/flutter.png"
-    },
-    {
-      "title": "Flutter developer",
-      "haveLink": true,
-      "linkText": "Git repo here",
-      "details": "jhkjhkh",
-      "linkIcon": "assets/icons/fb.png",
-      "link":
-          "https://play.google.com/store/apps/details?id=com.queein.partner",
-      "description": ["helloo", "world"],
-      "img": "assets/images/queen.png"
-    },
-    {
-      "title": "Queen",
-      "haveLink": true,
-      "linkText": "Git repo here",
-      "details": "jhkjhkh",
+      "linkText": "Playstore link here",
+      "details":
+          "Scan your documents into PDF anytime, anywhere at no cost. The fast document scanner and PDF creator allow you to quickly scan any type",
       "linkIcon": "assets/icons/play.png",
       "link":
-          "https://play.google.com/store/apps/details?id=com.queein.partner",
-      "description": ["helloo", "world"],
+          "https://play.google.com/store/apps/details?id=com.nmt.nmtscanner",
+      "description": [
+        "Camera to pdf",
+        "Gallery to pdf",
+        "Pdf to word",
+        "Word to pdf",
+      ],
       "img": "assets/images/scanner.png"
     },
-    {
-      "title": "Flutter developer",
-      "haveLink": true,
-      "linkText": "Git repo here",
-      "details": "jhkjhkh",
-      "linkIcon": "assets/icons/fb.png",
-      "link":
-          "https://play.google.com/store/apps/details?id=com.queein.partner",
-      "description": ["helloo", "world"],
-      "img": "assets/images/flutter.png"
-    },
-    {
-      "title": "Flutter developer",
-      "haveLink": true,
-      "linkText": "Git repo here",
-      "details": "jhkjhkh",
-      "linkIcon": "assets/icons/git.png",
-      "link":
-          "https://play.google.com/store/apps/details?id=com.queein.partner",
-      "description": ["helloo", "world"],
-      "img": "assets/images/scanner.png"
-    },
-    {
-      "title": "Queen",
-      "haveLink": true,
-      "linkText": "Git repo here",
-      "details": "jhkjhkh",
-      "linkIcon": "assets/icons/git.png",
-      "link":
-          "https://play.google.com/store/apps/details?id=com.queein.partner",
-      "description": ["helloo", "world"],
-      "img": "assets/images/queen.png"
-    },
-    {
-      "title": "Flutter developeer",
-      "haveLink": true,
-      "linkText": "Git repo here",
-      "details": "jhkjhkh",
-      "linkIcon": "assets/icons/play.png",
-      "link":
-          "https://play.google.com/store/apps/details?id=com.queein.partner",
-      "description": ["helloo", "world"],
-      "img": "assets/images/scanner.png"
-    },
-    {
-      "title": "Flutter developer",
-      "haveLink": true,
-      "linkText": "Git repo here",
-      "details": "jhkjhkh",
-      "linkIcon": "assets/icons/youtube.png",
-      "link":
-          "https://play.google.com/store/apps/details?id=com.queein.partner",
-      "description": ["helloo", "world"],
-      "img": "assets/images/queen.png"
-    },
+    // {
+    //   "title": "Radio talky - iOS",
+    //   "haveLink": true,
+    //   "linkText": "Referance here - iOS soon",
+    //   "details": "Online live streaming malayalam radio plateform",
+    //   "linkIcon": "assets/icons/web.png",
+    //   "link": "https://radiotalky.com/",
+    //   "description": ["Live streaming radio", "Background playing"],
+    //   "img": "assets/images/rtlogo.png"
+    // },
+    // {
+    //   "title": "I-Sow",
+    //   "haveLink": false,
+    //   "linkText": "Git repo here",
+    //   "details": "Rig management prototyping app",
+    //   "linkIcon": "assets/icons/flutter.png",
+    //   "link":
+    //       "https://play.google.com/store/apps/details?id=com.queein.partner",
+    //   "description": [
+    //     "Complete rig management system",
+    //     "Inapp Meet - Jitsi",
+    //     "Inapp Video call ,Audio call - Agora",
+    //     "Chat (Attachment, record, video,files sharing) - Firebase",
+    //   ],
+    //   "img": "assets/images/flutter.png"
+    // },
   ]
 };

@@ -19,7 +19,7 @@ class _PortfolioMobileState extends State<PortfolioMobile> {
     return Container(
       margin: const EdgeInsets.all(10),
       child: Column(children: [
-        TextTypes.largeP("My portfolio"),
+        TextTypes.largeHead("My portfolio"),
         const Divider(
           color: Colors.yellow,
         ),
@@ -63,11 +63,11 @@ class _PortfolioMobileState extends State<PortfolioMobile> {
         borderRadius: BorderRadius.circular(15.0),
       ),
       child: Container(
-        height: 160,
-        width: 160,
+        height: 150,
+        width: 150,
         padding: const EdgeInsets.all(12.0),
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Image.asset(
@@ -75,7 +75,9 @@ class _PortfolioMobileState extends State<PortfolioMobile> {
               height: 70,
               fit: BoxFit.contain,
             ),
-            TextTypes.mediamWP(title, true)
+            TextTypes.normalHead(
+              title,
+            )
           ],
         ),
       ),

@@ -27,6 +27,8 @@ class PopupWidget {
       BuildContext context, title, desc, bullet, icon, linkIcon, linkText) {
     return AlertDialog(
       backgroundColor: Colors.black,
+      scrollable: true,
+      insetPadding: const EdgeInsets.symmetric(vertical: 60, horizontal: 40),
       shape: const RoundedRectangleBorder(
           borderRadius: BorderRadius.all(Radius.circular(15.0))),
       titlePadding: const EdgeInsets.all(0),
@@ -63,10 +65,10 @@ class PopupWidget {
         ],
       ),
       content: Column(children: [
-        TextTypes.largeP(title),
+        TextTypes.largeHead(title),
         TextTypes.mediamP(desc),
         BulletList(bullet),
-        card(linkIcon, linkText)
+        card(linkIcon, linkText),
       ]),
     );
   }
@@ -74,11 +76,13 @@ class PopupWidget {
 
 Widget card(linkIcon, linkText) {
   return Card(
-    color: Colors.white30,
+    color: CColors.grey,
     shape: RoundedRectangleBorder(
       borderRadius: BorderRadius.circular(15.0),
     ),
     child: Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         Container(
           padding: const EdgeInsets.all(12.0),
