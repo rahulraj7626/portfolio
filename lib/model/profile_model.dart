@@ -68,18 +68,136 @@ Map<String, dynamic> port = {
 Map<String, dynamic> works = {
   "works": [
     {
-      "title": "Flutter developer\nFreelancer",
-      "haveLink": false,
-      "linkIcon": "assets/icons/fb.png",
-      "description": ["helloo", "world"],
-      "img": "assets/icons/insta.png"
+      "title": "Queen",
+      "haveLink": true,
+      "linkText": "Git repo here",
+      "details": "Virtual queue management app",
+      "linkIcon": "assets/icons/play.png",
+      "link":
+          "https://play.google.com/store/apps/details?id=com.queein.partner",
+      "description": ["Flutter", "Firebase", "REST api", "GetX"],
+      "img": "assets/images/queen.png"
     },
     {
-      "title": "Flutter developer\nFreelancer",
+      "title": "Flutter developer",
       "haveLink": true,
+      "linkText": "Git repo here",
+      "details": "jhkjhkh",
       "linkIcon": "assets/icons/fb.png",
+      "link":
+          "https://play.google.com/store/apps/details?id=com.queein.partner",
       "description": ["helloo", "world"],
-      "img": "assets/icons/insta.png"
-    }
+      "img": "assets/images/queen.png"
+    },
+    {
+      "title": "Flutter developer",
+      "haveLink": true,
+      "linkText": "Git repo here",
+      "details": "jhkjhkh",
+      "linkIcon": "assets/icons/fb.png",
+      "link":
+          "https://play.google.com/store/apps/details?id=com.queein.partner",
+      "description": ["helloo", "world"],
+      "img": "assets/images/flutter.png"
+    },
+    {
+      "title": "Queen",
+      "haveLink": true,
+      "linkText": "Git repo here",
+      "details": "jhkjhkh",
+      "linkIcon": "assets/icons/fb.png",
+      "link":
+          "https://play.google.com/store/apps/details?id=com.queein.partner",
+      "description": ["helloo", "world"],
+      "img": "assets/images/queen.png"
+    },
+    {
+      "title": "Flutter developer",
+      "haveLink": true,
+      "linkText": "Git repo here",
+      "details": "jhkjhkh",
+      "linkIcon": "assets/icons/fb.png",
+      "link":
+          "https://play.google.com/store/apps/details?id=com.queein.partner",
+      "description": ["helloo", "world"],
+      "img": "assets/images/flutter.png"
+    },
+    {
+      "title": "Flutter developer",
+      "haveLink": true,
+      "linkText": "Git repo here",
+      "details": "jhkjhkh",
+      "linkIcon": "assets/icons/fb.png",
+      "link":
+          "https://play.google.com/store/apps/details?id=com.queein.partner",
+      "description": ["helloo", "world"],
+      "img": "assets/images/queen.png"
+    },
+    {
+      "title": "Queen",
+      "haveLink": true,
+      "linkText": "Git repo here",
+      "details": "jhkjhkh",
+      "linkIcon": "assets/icons/play.png",
+      "link":
+          "https://play.google.com/store/apps/details?id=com.queein.partner",
+      "description": ["helloo", "world"],
+      "img": "assets/images/scanner.png"
+    },
+    {
+      "title": "Flutter developer",
+      "haveLink": true,
+      "linkText": "Git repo here",
+      "details": "jhkjhkh",
+      "linkIcon": "assets/icons/fb.png",
+      "link":
+          "https://play.google.com/store/apps/details?id=com.queein.partner",
+      "description": ["helloo", "world"],
+      "img": "assets/images/flutter.png"
+    },
+    {
+      "title": "Flutter developer",
+      "haveLink": true,
+      "linkText": "Git repo here",
+      "details": "jhkjhkh",
+      "linkIcon": "assets/icons/git.png",
+      "link":
+          "https://play.google.com/store/apps/details?id=com.queein.partner",
+      "description": ["helloo", "world"],
+      "img": "assets/images/scanner.png"
+    },
+    {
+      "title": "Queen",
+      "haveLink": true,
+      "linkText": "Git repo here",
+      "details": "jhkjhkh",
+      "linkIcon": "assets/icons/git.png",
+      "link":
+          "https://play.google.com/store/apps/details?id=com.queein.partner",
+      "description": ["helloo", "world"],
+      "img": "assets/images/queen.png"
+    },
+    {
+      "title": "Flutter developeer",
+      "haveLink": true,
+      "linkText": "Git repo here",
+      "details": "jhkjhkh",
+      "linkIcon": "assets/icons/play.png",
+      "link":
+          "https://play.google.com/store/apps/details?id=com.queein.partner",
+      "description": ["helloo", "world"],
+      "img": "assets/images/scanner.png"
+    },
+    {
+      "title": "Flutter developer",
+      "haveLink": true,
+      "linkText": "Git repo here",
+      "details": "jhkjhkh",
+      "linkIcon": "assets/icons/youtube.png",
+      "link":
+          "https://play.google.com/store/apps/details?id=com.queein.partner",
+      "description": ["helloo", "world"],
+      "img": "assets/images/queen.png"
+    },
   ]
 };

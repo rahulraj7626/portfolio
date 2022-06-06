@@ -1,8 +1,5 @@
-import 'dart:convert';
-
 import 'package:flutter/material.dart';
 import 'package:portfolio/model/portfolio_model.dart';
-import 'package:portfolio/utils/text_styles.dart';
 import 'package:portfolio/view/mobile/mobile_about_widget.dart';
 import 'package:portfolio/view/mobile/mobile_contact.dart';
 import 'package:portfolio/view/mobile/mobile_education.dart';
@@ -49,7 +46,6 @@ class _HomeState extends State<Home> {
               height: height,
             ),
             PortfolioMobile(
-              data: data,
               height: height,
             ),
             ContactMobile(

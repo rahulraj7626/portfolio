@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/constants/color_constants.dart';
 
 import '../../utils/text_styles.dart';
 import 'bullet_list.dart';
 
 class PopupWidget {
-  void scaleDialog(context) {
+  void scaleDialog(
+      context, title, icon, desc, List<String> bullet, linkText, linkIcon) {
     showGeneralDialog(
       context: context,
       pageBuilder: (ctx, a1, a2) {
@@ -14,14 +16,15 @@ class PopupWidget {
         var curve = Curves.easeInOut.transform(a1.value);
         return Transform.scale(
           scale: curve,
-          child: _dialog(ctx),
+          child: _dialog(ctx, title, desc, bullet, icon, linkIcon, linkText),
         );
       },
       transitionDuration: const Duration(milliseconds: 900),
     );
   }
 
-  Widget _dialog(BuildContext context) {
+  Widget _dialog(
+      BuildContext context, title, desc, bullet, icon, linkIcon, linkText) {
     return AlertDialog(
       backgroundColor: Colors.black,
       shape: const RoundedRectangleBorder(
@@ -29,11 +32,16 @@ class PopupWidget {
       titlePadding: const EdgeInsets.all(0),
       title: Stack(
         children: [
-          ClipRRect(
-            borderRadius: BorderRadius.circular(10),
-            child: Image.network(
-              "https://i.picsum.photos/id/0/5616/3744.jpg?hmac=3GAAioiQziMGEtLbfrdbcoenXoWAW-zlyEAMkfEdBzQ",
-              fit: BoxFit.cover,
+          Container(
+            alignment: Alignment.center,
+            margin: const EdgeInsets.only(top: 20),
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(10),
+              child: Image.asset(
+                icon,
+                height: 150,
+                fit: BoxFit.contain,
+              ),
             ),
           ),
           Positioned(
@@ -42,9 +50,9 @@ class PopupWidget {
             child: Padding(
               padding: const EdgeInsets.all(8.0),
               child: IconButton(
-                  icon: const Icon(
+                  icon: Icon(
                     Icons.cancel,
-                    color: Colors.yellow,
+                    color: CColors.yellow,
                     size: 30,
                   ),
                   onPressed: () {
@@ -55,20 +63,16 @@ class PopupWidget {
         ],
       ),
       content: Column(children: [
-        TextTypes.largeP("Project name"),
-        TextTypes.mediamP(
-            "In publishing and graphic used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available."),
-        const BulletList([
-          "Lorem ipsum dolor sit amet",
-          "consectetur adipiscing elit",
-        ]),
-        card()
+        TextTypes.largeP(title),
+        TextTypes.mediamP(desc),
+        BulletList(bullet),
+        card(linkIcon, linkText)
       ]),
     );
   }
 }
 
-Widget card() {
+Widget card(linkIcon, linkText) {
   return Card(
     color: Colors.white30,
     shape: RoundedRectangleBorder(
@@ -79,11 +83,11 @@ Widget card() {
         Container(
           padding: const EdgeInsets.all(12.0),
           child: Image.asset(
-            "assets/icons/git.png",
+            linkIcon,
             height: 30,
           ),
         ),
-        TextTypes.mediamP("GitHub Repo here")
+        TextTypes.mediamP(linkText)
       ],
     ),
   );
