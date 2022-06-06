@@ -64,3 +64,22 @@ Map<String, dynamic> port = {
     "fb": "assets/icons/fb.png"
   }
 };
+
+Map<String, dynamic> works = {
+  "works": [
+    {
+      "title": "Flutter developer\nFreelancer",
+      "haveLink": false,
+      "linkIcon": "assets/icons/fb.png",
+      "description": ["helloo", "world"],
+      "img": "assets/icons/insta.png"
+    },
+    {
+      "title": "Flutter developer\nFreelancer",
+      "haveLink": true,
+      "linkIcon": "assets/icons/fb.png",
+      "description": ["helloo", "world"],
+      "img": "assets/icons/insta.png"
+    }
+  ]
+};

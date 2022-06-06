@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/constants/color_constants.dart';
 import 'package:portfolio/utils/text_styles.dart';
 
 class DrawerList extends StatelessWidget {
@@ -19,7 +20,7 @@ class DrawerList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        decoration: const BoxDecoration(color: Colors.black),
+        decoration: BoxDecoration(color: CColors.black),
         padding: const EdgeInsets.all(15),
         height: height,
         child: Column(
