@@ -27,7 +27,7 @@ class MobileAbout extends StatelessWidget {
         about("Designation", data.designation),
         about("Languages known", data.languages),
         const Spacer(),
-        downloadContainer(),
+        downloadContainer(context),
         const Spacer(),
         wrapWidget(),
         const Spacer(),
